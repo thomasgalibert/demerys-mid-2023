@@ -40,7 +40,7 @@ export default function Footer(){
     <footer className={`border-t mt-10 pt-6 text-stone-500 text-xs ${berkeleyMono.className}`}>
       <ul className="flex items-center justify-center space-x-6 mb-4">
         {links.map((link) => (
-          <li><a href={link.url} className="hover:text-black hover:underline" >{link.name}</a></li>
+          <li key={link.name}><a href={link.url} className="hover:text-black hover:underline" >{link.name}</a></li>
         ))}
       </ul>
       <div className="flex justify-between">

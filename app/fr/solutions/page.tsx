@@ -76,7 +76,7 @@ export default function Solutions(){
 
       <ul className="grid grid-cols-3 gap-6 mt-6">
         {projects.map((project) => (
-          <li className="sm:col-span-1 col-span-3 text-center border p-6 flex flex-col hover:rotate-3 transition-transform">
+          <li key={project.name} className="sm:col-span-1 col-span-3 text-center border p-6 flex flex-col hover:rotate-3 transition-transform">
             <h4 className={`text-lg ${berkeleyMono.className}`}>{project.name}</h4>
             <p className="italic text-sm flex-grow text-stone-600">{project.features}</p>
             <p className={`text-sm ${berkeleyMono.className}`}>Tech Stack : {project.techStack}</p>
