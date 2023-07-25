@@ -1,6 +1,12 @@
 import { berkeleyMono } from '@/app/styles/fonts'
 import Image from 'next/image'
 import services from '../../../public/images/sections/services.jpg'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Nos services - Demerys',
+  description: "Découvrez comment nos services de conseil en architecture logicielle, en développement et en data privacy peuvent vous aider à exploiter pleinement le potentiel de votre entreprise.",
+}
 
 export default function Services () {
   return (

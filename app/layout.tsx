@@ -1,27 +1,24 @@
-import './globals.css'
+import '@/app/globals.css'
 import type { Metadata } from 'next'
-import { universLT } from './styles/fonts'
-import Nav from './nav'
-import Footer from './footer'
-import Flags from './flags'
+import { universLT } from '@/app/styles/fonts'
+import Nav from '@/app/nav'
+import Footer from '@/app/footer'
+import Flags from '@/app/flags'
 
 export const metadata: Metadata = {
   title: 'DEMERYS',
-  description: "Edition de logiciels ERP sur-mesure pour les PME",
+  description: "DEMERYS, leader en solutions ERP pour TPE et PME, propose une gamme de services de conseil et de logiciels pour transformer votre entreprise.",
 }
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode,
 }) {
   return (
-    <html lang="fr">
+    <html lang={"fr"}>
       <body className={`${universLT.className} max-w-3xl mx-auto py-10`}>
-        <Flags />
-        <Nav />
-        <main className='py-8'>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   )

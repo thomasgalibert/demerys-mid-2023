@@ -1,19 +1,19 @@
-import GoogleAppointmentScript from "./google_appointment_script"
+import GoogleAppointmentScript from "./google_appointment_script_en"
 import { berkeleyMono } from "./styles/fonts"
 
-export default function ContactForm() {
+export default function ContactFormEn() {
   return (
     <div className="relative isolate bg-white">      
       <div className="">
         <p className="mt-2 text-lg leading-8 text-stone-600">
-          Nous ne nous servons pas des emails à des fins commerciales. Nous ne les utilisons que pour vous répondre.
+          We do not use emails for commercial purposes. We use them only to respond to you.
         </p>
         <div className="mt-2 flex flex-col gap-16 sm:gap-y-10 lg:flex-row">
           <form action="#" method="POST" className="lg:flex-auto">
             <div className="grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-2">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-stone-900">
-                  Nom
+                  Last Name
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -28,7 +28,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-stone-900">
-                  Prénom
+                  First Name
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -77,13 +77,13 @@ export default function ContactForm() {
                 type="submit"
                 className={`${berkeleyMono.className} block w-full bg-black px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-800`}
               >
-                Envoyer le message
+                Submit the form
               </button>
             </div>
             <p className="mt-4 text-sm leading-6 text-stone-500">
-              En cliquant sur Envoyer, vous acceptez notre{' '}
+              By sending the form you are accepting our{' '}
               <a href="/fr/privacy" className="font-semibold text-black">
-                politique de données &nbsp;personnelles
+                privacy &nbsp;policies
               </a>
               .
             </p>

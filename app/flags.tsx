@@ -9,7 +9,7 @@ export default function Flags() {
       <div className="justify-end flex items-center space-x-2">
         <a href="/"><Image className="w-6 h-6" src={frFlag} alt="french flag"/></a>
         <a href="/en"><Image className="w-6 h-6" src={ukFlag} alt="union jack flag"/></a>
-        <a href="/jp"><Image className="w-6 h-6" src={jpFlag} alt="japanses flag"/></a>
+        <a href="/ja"><Image className="w-6 h-6" src={jpFlag} alt="japanses flag"/></a>
       </div>
     </div>
   )

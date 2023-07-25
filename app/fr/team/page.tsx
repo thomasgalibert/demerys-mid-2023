@@ -7,6 +7,12 @@ import calProfile from "../../../public/images/team/cal.jpg"
 import acprProfile from "../../../public/images/team/acpr.jpg"
 import team from "../../../public/images/sections/team.jpg"
 import Divider from "@/app/divider"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Notre équipe - Demerys',
+  description: "Découvrez l'équipe pluridisciplinaire de DEMERYS, composée d'experts en développement de logiciels, en finance et en droit, dédiée à votre réussite.",
+}
 
 const people = [
   {
@@ -18,7 +24,7 @@ const people = [
 
   {
     name: "Thomas GALIBERT",
-    role: "CTO",
+    role: "Directeur technique",
     imageUrl: tgProfile,
     bio: "Thomas développe des logiciels depuis 2018. Après un master en Droit et Informatique, il part travailler au Japon avant de revenir en France pour fonder Demerys avec Camille.",
   },

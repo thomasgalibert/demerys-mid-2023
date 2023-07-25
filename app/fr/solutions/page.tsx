@@ -2,6 +2,12 @@ import { berkeleyMono } from "@/app/styles/fonts"
 import Divider from "@/app/divider"
 import Image from "next/image"
 import solutions from "../../../public/images/sections/solutions.jpg"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Nos solutions - Demerys',
+  description: "Explorez nos solutions ERP innovantes, conçues avec des techniques d'event storming et de domain driven design pour stimuler la croissance de votre entreprise.",
+}
 
 const projects = [
   {
@@ -53,7 +59,7 @@ export default function Solutions(){
       <Image src={solutions} alt={"Solutions ERP Demerys"} className='my-8' />
 
       <p lang="fr">
-      Nos solutions ERP sont plus que de simples outils ; ce sont des catalyseurs pour votre réussite. Construits sur les principes d'event storming et de domain driven design, nos logiciels sont personnalisables, intuitifs et évolutifs. Que vous ayez besoin de gérer vos ressources humaines, votre chaîne logistique, vos finances ou vos relations client, nous avons la solution qu'il vous faut.
+      Nos solutions ERP sont plus que de simples outils ; ce sont des catalyseurs pour votre réussite. Construits sur les principes <a href="https://www.eventstorming.com/" target="_blank">d'event storming</a> et de <a href="https://martinfowler.com/bliki/DomainDrivenDesign.html" target="_blank">domain driven design</a>, nos logiciels sont personnalisables, intuitifs et évolutifs. Que vous ayez besoin de gérer vos ressources humaines, votre chaîne logistique, vos finances ou vos relations client, nous avons la solution qu'il vous faut.
       </p>
 
       <h3>Pourquoi choisir nos logiciels ?</h3>
@@ -70,7 +76,7 @@ export default function Solutions(){
 
       <ul className="grid grid-cols-3 gap-6 mt-6">
         {projects.map((project) => (
-          <li className="sm:col-span-1 col-span-3 text-center border p-6 flex flex-col">
+          <li className="sm:col-span-1 col-span-3 text-center border p-6 flex flex-col hover:rotate-3 transition-transform">
             <h4 className={`text-lg ${berkeleyMono.className}`}>{project.name}</h4>
             <p className="italic text-sm flex-grow text-stone-600">{project.features}</p>
             <p className={`text-sm ${berkeleyMono.className}`}>Tech Stack : {project.techStack}</p>
