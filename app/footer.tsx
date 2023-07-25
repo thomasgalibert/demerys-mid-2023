@@ -7,31 +7,31 @@ const year = new Date().getFullYear()
 const links = [
   {
     name: "Notre équipe",
-    url: "#",
+    url: "/fr/team",
   },
   {
     name: "Nos solutions",
-    url: "#",
+    url: "/fr/solutions",
   },
   {
     name: "Nos services",
-    url: "#",
+    url: "/fr/services",
   },
   {
     name: "Blog",
-    url: "#",
+    url: "/fr/blog",
   },
   {
     name: "Contact",
-    url: "#",
+    url: "/fr/contact",
   },
   {
     name: "Mentions",
-    url: "#",
+    url: "/fr/mentions",
   },
   {
     name: "Données personnelles",
-    url: "#",
+    url: "/fr/privacy",
   },
 ]
 

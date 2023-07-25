@@ -9,22 +9,22 @@ const linksLeft = [
   },
   {
     name: "Nos solutions",
-    url: "#",
+    url: "/fr/solutions",
   },
   {
     name: "Nos services",
-    url: "#",
+    url: "/fr/services",
   },
 ]
 
 const linksRight = [
   {
     name: "Blog",
-    url: "#",
+    url: "/fr/blog",
   },
   {
     name: "Contact",
-    url: "#",
+    url: "/fr/contact",
   },
 ]
 
@@ -36,7 +36,7 @@ export default function Nav() {
           <Image src={logo} alt="Logo Demerys" className="w-16 h-16" />
         </a></li>
         
-        <li><a href="#" className={`${berkeleyMono.className} text-xl font-black`}>DEMERYS</a></li>
+        <li><a href="/" className={`${berkeleyMono.className} text-xl font-black`}>DEMERYS</a></li>
 
         {linksLeft.map((link) => (
           <li key={link.name}><a href={link.url} className={`hover:underline text-stone-700 hover:text-black ${berkeleyMono.className}`}>{link.name}</a></li>

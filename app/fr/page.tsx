@@ -44,17 +44,17 @@ const people = [
     role: "Organisme de formations spécialisé en management",
     imageUrl: acprProfile,
     bio: "Sébastien BERG est spécialisé dans l'accompagnement des entreprises dans leur transformation digitale. Il les aide à mettre en place des processus de management et de gestion adaptés à leurs besoins.",
-    websiteUrl: "https://acproccitanie.fr/",
+    websiteUrl: "https://www.acpr-occitanie.fr/",
   },
 ]
 
 export default function Team() {
   return(
-    <div>
+    <article>
       <h1 className={`${berkeleyMono.className} text-2xl text-center mb-4`}>Une combinaison de talents</h1>
 
       <p>DEMERYS est plus qu'une entreprise : nous sommes une équipe. Nous réunissons des experts de divers domaines, unis par une passion commune pour l'innovation et la résolution de problèmes.</p>
-      <p>Nous avons dans notre équipe des développeurs dédiés qui maîtrisent à la perfection les techniques d'event storming et de domain driven design. Ils conçoivent et peaufinent nos logiciels ERP pour qu'ils soient parfaitement adaptés aux besoins spécifiques de votre entreprise.</p>
+      <p>Nous avons dans notre équipe des développeurs dédiés qui maîtrisent à la perfection les techniques <a href="https://www.eventstorming.com/" target="_blank">d'event storming</a> et de <a href="https://martinfowler.com/bliki/DomainDrivenDesign.html" target="_blank">domain driven design</a>. Ils conçoivent et peaufinent nos logiciels ERP pour qu'ils soient parfaitement adaptés aux besoins spécifiques de votre entreprise.</p>
 
       <Image src={team} alt="Notre équipe" className="my-8" />
 
@@ -77,17 +77,17 @@ export default function Team() {
                 <dt className="sr-only">Bio</dt>
                 <dd className="mt-3">
                   <p className="text-gray-500 text-sm">{person.bio}</p>
+                  {person.websiteUrl && (
+                    <a href={person.websiteUrl} target="_blank" className="mt-3 text-sm font-medium text-stone-900 underline hover:text-stone-700">
+                      Visiter le site
+                    </a>
+                  )}
                 </dd>
-                {person.websiteUrl && (
-                  <dd className="mt-3">
-                    <a href={person.websiteUrl} className="text-sm" target="_blank">Visiter leur site web</a>
-                  </dd>
-                )}
               </dl>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </article>
   )
 }

@@ -5,3 +5,15 @@
 p{
     @apply text-lg py-3;
 }
+
+p > a{
+    @apply text-blue-600 underline;
+}
+
+article > h3{
+    @apply text-2xl font-bold mt-4;
+}
+
+article > p{
+    @apply hyphens-auto;
+}

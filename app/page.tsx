@@ -45,7 +45,7 @@ const features = [
 
 export default function Home() {
   return (
-    <div>
+    <article>
       <h1 className={`${berkeleyMono.className} text-2xl text-center`}>
         Faites passer votre entreprise au niveau supérieur avec DEMERYS, 
         votre partenaire de confiance pour des solutions ERP et des 
@@ -91,6 +91,6 @@ export default function Home() {
 
       <ContactForm />
 
-    </div>
+    </article>
   )
 }
