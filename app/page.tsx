@@ -72,7 +72,7 @@ export default function Home() {
             <div key={feature.name} className='border border-stone-300 p-10 hover:shadow-md transition-shadow'>
               <div className="flex flex-col h-full justify-between">
                 <div>
-                  <Image src={feature.image} alt={feature.name} className='w-full h-48' />
+                  <Image src={feature.image} alt={feature.name} className='max-h-full m-auto' />
                   <h3 className={`${berkeleyMono.className} text-xl text-center mt-3`}>
                     {feature.name}
                   </h3>

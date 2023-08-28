@@ -38,14 +38,14 @@ const links = [
 export default function Footer(){
   return(
     <footer className={`border-t mt-10 pt-6 text-stone-500 text-xs ${berkeleyMono.className}`}>
-      <ul className="flex items-center justify-center space-x-6 mb-4">
+      <ul className="flex flex-wrap items-center justify-center space-x-6 mb-4">
         {links.map((link) => (
           <li key={link.name}><a href={link.url} className="hover:text-black hover:underline" >{link.name}</a></li>
         ))}
       </ul>
-      <div className="flex justify-between">
+      <div className="flex flex-col items-center space-y-4 sm:space-y-0 sm:flex-row sm:justify-between">
         <div>© Demerys Investment 2014-{year} tous droits réservés</div>
-        <div><span className="bg-green-700 p-1 text-white">PROD</span> | Version 0.9.0</div>
+        <div><span className="bg-green-700 p-1 text-white">PROD</span> | Version 1.1.0</div>
       </div>
       <div className="mt-10"><Image src={logo} alt="logo Demerys" className="mx-auto w-20 h-20 grayscale" /></div>
     </footer>

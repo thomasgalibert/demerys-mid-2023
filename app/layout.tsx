@@ -1,9 +1,6 @@
 import '@/app/globals.css'
 import type { Metadata } from 'next'
 import { universLT } from '@/app/styles/fonts'
-import Nav from '@/app/nav'
-import Footer from '@/app/footer'
-import Flags from '@/app/flags'
 
 export const metadata: Metadata = {
   title: 'DEMERYS',
@@ -17,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={"fr"}>
-      <body className={`${universLT.className} max-w-3xl mx-auto py-10`}>
+      <body className={`${universLT.className} max-w-3xl sm:mx-auto py-10 mx-6`}>
         {children}
       </body>
     </html>
