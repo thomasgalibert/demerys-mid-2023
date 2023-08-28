@@ -73,7 +73,7 @@ export default function Team() {
 
       <div className={`grid grid-cols-2 gap-6 mt-6`}>
         {people.map((person) => (
-          <div key={person.name} className="col-span-1 flex flex-col text-center border bg-white divide-y divide-gray-200">
+          <div key={person.name} className="col-span-2 sm:col-span-1 flex flex-col text-center border bg-white divide-y divide-gray-200">
             <div className="flex-1 flex flex-col p-8">
               <Image className="w-32 h-32 flex-shrink-0 mx-auto bg-black rounded-full" src={person.imageUrl} alt={person.name} />
               <h3 className="mt-6 text-gray-900 text-sm font-medium">{person.name}</h3>
