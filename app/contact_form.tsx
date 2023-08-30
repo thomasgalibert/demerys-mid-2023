@@ -6,7 +6,7 @@ export default function ContactForm() {
     <div className="relative isolate bg-white">      
       <div className="">
         <p className="mt-2 text-lg leading-8 text-stone-600">
-          Nous ne nous servons pas des emails à des fins commerciales. Nous ne les utilisons que pour vous répondre.
+          Nous n'utilisons pas vos emails à des fins commerciales mais simplement pour vous répondre.
         </p>
         <div className="mt-2 flex flex-col gap-16 sm:gap-y-10 lg:flex-row">
           <form action="https://formeezy.com/api/v1/forms/64144ff86af5060008cb2025/submissions" method="POST" encType="multipart/form-data" className="lg:flex-auto">
