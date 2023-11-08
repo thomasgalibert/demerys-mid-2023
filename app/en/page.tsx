@@ -50,9 +50,12 @@ export default function HomeEn() {
         Take your business to the next level with DEMERYS, your trusted partner for ERP solutions and customized consulting services.
       </h1>
 
-      <Image src={ban} alt={"Développement et architecture logicielle"} className='my-8' />
+      <div className='aspect-w-16 aspect-h-9 lg:aspect-none'>
+        <Image src={ban} alt={"Développement et architecture logicielle"} 
+                className='my-8 w-full h-full object-center object-cover lg:w-full lg:h-full' />
+      </div>
 
-      <h2 className={`text-lg text-stone-500 text-center`}>
+      <h2 className={`text-lg text-stone-500 text-center mt-20 lg:mt-0`}>
         For almost 10 years, we have been helping small and medium-sized businesses (SMEs) optimize their business operations with our innovative ERP software and software architecture expertise.
       </h2>
 

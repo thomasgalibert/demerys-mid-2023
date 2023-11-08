@@ -50,9 +50,12 @@ export default function HomeEn() {
       DEMERYSでビジネスを次のレベルに引き上げましょう。ERPソリューションとカスタマイズされたコンサルティングサービスの信頼できるパートナーです
       </h1>
 
-      <Image src={ban} alt={"Développement et architecture logicielle"} className='my-8' />
+      <div className='aspect-w-16 aspect-h-9 lg:aspect-none'>
+        <Image src={ban} alt={"Développement et architecture logicielle"} 
+                className='my-8 w-full h-full object-center object-cover lg:w-full lg:h-full' />
+      </div>
 
-      <h2 className={`text-lg text-stone-500 text-center`}>
+      <h2 className={`text-lg text-stone-500 text-center mt-20 lg:mt-0`}>
       10年近くにわたり、当社は革新的なERPソフトウェアとソフトウェアアーキテクチャの専門知識を駆使して、中小企業（SME）のビジネスオペレーションを最適化してきました。
       </h2>
 
