@@ -36,13 +36,15 @@ export default function OpenSource() {
       </h1>  
 
       <p lang='fr'>
-        Chez Demerys, nous croyons que le logiciel doit être un bien commun. 
-        C'est pourquoi nous avons décidé de rendre open-source nos réalisations internes.
+        Chez Demerys, nous croyons que du moment où vous payez pour un logiciel, vous devriez savoir ce qu'il y a dedans.
+        Pour paraphraser Richard Stallman, imaginez-vous acheter une voiture sans pouvoir ouvrir le capot ou une boîte de
+        céréales sans pouvoir lire la liste des ingrédients. 
+        C'est pourquoi nous avons décidé de rendre open-source nos réalisations internes. 
       </p>
 
       <p lang="fr">
-        Elles seront distribuées sous <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html" target="_blank"> licence GNU GPL v.3</a>
-        et permettront à tout un chacun de consulter le code source. En effet, nous croyons que la transparence est un gage de confiance 
+        Elles seront distribuées sous <a href="https://www.gnu.org/licenses/quick-guide-gplv3.fr.html" target="_blank"> licence GNU GPL v.3 </a>
+         et permettront à tout un chacun de consulter le code source. En effet, nous croyons que la transparence est un gage de confiance 
         et que le partage de connaissance ne peut aller qu'en faveur de l'innovation.
       </p>
 
