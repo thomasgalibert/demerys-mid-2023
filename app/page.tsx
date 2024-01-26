@@ -65,9 +65,9 @@ export default function Home() {
         </div>
 
         <h2 className={`text-lg text-stone-500 text-center mt-20 lg:mt-0`}>
-          <a href={'/fr/buy-once'} 
+          <a href={'/fr/solutions/open-source'} 
             className={`${berkeleyMono.className} bg-stone-950 text-white text-lg py-3 px-5 flex items-center hover:pr-4 transition-all`}>
-            <span className='inline-flex'>Marre de payer tous les mois pour un logiciel qui ne vous appartient pas ?</span>
+            <span className='inline-flex'>Découvrer nos solutions open-source</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="ml-2 w-3 h-3">
               <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
             </svg>
