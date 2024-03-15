@@ -4,15 +4,19 @@ import { berkeleyMono } from "./styles/fonts"
 
 const linksLeft = [
   {
-    name: "Notre équipe",
+    name: "Équipe",
     url: "/fr/team",
   },
   {
-    name: "Nos solutions",
+    name: "Solutions",
     url: "/fr/solutions",
   },
   {
-    name: "Nos services",
+    name: "Formations",
+    url: "/fr/formations",
+  },
+  {
+    name: "Services",
     url: "/fr/services",
   },
 ]
