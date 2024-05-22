@@ -17,8 +17,8 @@ const formations = [
     description: "Cette formation permettra de découvrir les principes de fonctionnement de l’IA et les principaux outils pour les mettre en application dans votre structure.",
     target: "Toute personne souhaitant comprendre les bases de l'intelligence artificielle.",
     trainer: "Thomas GALIBERT",
-    url: "https://acproccitanie.fr/formation-gestion/les-bases-de-lintelligence-artificielle/",
-    url_target: "_blank"
+    url: "/fr/formations/ia",
+    url_target: "_self"
   }
 ]
 
